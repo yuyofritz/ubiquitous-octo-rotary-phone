@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4d4d4;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    color: #707070;
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px
+    float: right;
+    margin-left: 10px;
+    order: -1;
+;
+}
+
+.text-success.text-bold {
+    font-size: 25px;
+    padding: 0%;
+    margin: 0%;
+    float: right;
+    gap: 10px;
+    
+}
+
+.text-decoration-line-through {
+    margin-right: 10px;
+}
+
+
+/* Buttons */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.container.form {
+    font-size: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.img-fluid {
+    height: 60px;
+    width: auto;
+    margin: 0;
+    border: 0;
+}
+
+footer a {
+    color: #28a745;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 1rem:20px ;
+}
+
+.hero-image {
+    background-image: url("../imgs/images.png");
+    background-color: #cccccc;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.intro h2, .intro p {
+    max-width: 800px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.servicio h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.servicio p {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.contacto {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #e0e0e0;
+}
+
+.contacto h2 {
+    font-size: 1rem;
+}
+
+.contacto a {
+    color: #007bff;
+    font-weight: bold;
+}
+footer {
+    background-color: rgb(43, 40, 38);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
