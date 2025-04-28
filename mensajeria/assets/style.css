@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar de contactos */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+    min-width: 260px;
+    overflow-y: auto;
+}
+
+/* Estado del usuario */
+.usuario-estado {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.usuario-estado .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.estado {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: #CDC3E6;
+    font-weight: bold;
+}
+
+/* Botón nuevo chat */
+.nuevo-chat {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.nuevo-chat button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #A491D2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nuevo-chat button:hover {
+    background-color: #A491D2;
+}
+
+/* Lista de contactos */
+.contactos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.7rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.contacto:hover {
+    background-color: #e9ecef;
+}
+
+.contacto .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-contacto {
+    margin-left: 1rem;
+}
+
+.info-contacto h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.info-contacto p {
+    font-size: 0.85rem;
+    color: #6c757d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Sección principal */
+.principal {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    padding: 2rem;
+}
+
+.contenido-principal {
+    text-align: center;
+    max-width: 500px;
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+.contenido-principal h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contenido-principal p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: none;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .principal {
+        flex: 1;
+        padding: 1rem;
+    }
+}
